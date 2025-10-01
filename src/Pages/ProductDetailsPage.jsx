@@ -17,7 +17,7 @@ const ProductDetailsPage = () => {
       <h2 className="text-xl font-bold">{product.name}</h2>
       <img src={product.image} alt={product.name} className="w-40 my-4" />
       <p>{product.description}</p>
-      <p className="text-lg font-semibold mt-2">${product.price}</p>
+      <p className="text-lg font-semibold mt-2">N{product.price}</p>
 
       <Link
         to="/order"
