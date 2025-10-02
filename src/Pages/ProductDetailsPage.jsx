@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { useContext } from "react";
-import { StoreContext } from "../context/StoreContext";
+import { StoreContext } from "../Context/StoreContext";
 import { products } from "../assets/assets";
 
 const ProductDetailsPage = () => {

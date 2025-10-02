@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState, useContext } from "react";
-import { StoreContext } from "../context/StoreContext";
+import { StoreContext } from "../Context/StoreContext";
 
 const OrderFormPage = () => {
   const [name, setName] = useState("");
@@ -10,7 +10,7 @@ const OrderFormPage = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    // pass name + product to success page using navigate state
+
     navigate("/success", { state: { name, product: selectedProduct } });
   }
 

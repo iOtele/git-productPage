@@ -1,9 +1,9 @@
-import { createContext, useState } from "react";
+import React, { createContext, useState } from "react";
 import { products } from "../assets/assets";
 
 export const StoreContext = createContext();
 
-export function StoreProvider({ children }) {
+const StoreProvider = ({ children }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   return (
@@ -13,4 +13,5 @@ export function StoreProvider({ children }) {
       {children}
     </StoreContext.Provider>
   );
-}
+};
+export default StoreProvider;
